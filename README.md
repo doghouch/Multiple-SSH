@@ -3,7 +3,7 @@
 An open-source program to perform SSH commands on multiple servers. It is (essentially) a "dumbed down" version of PSSH (parallel-ssh). 
 
 ## Use
-This program has only been tested with Python 3.7+. Once you have that installed, open the Python file and edit the "HOSTNAMES" list to something like the following:
+This program has only been tested with Python 3.7+ (THIS WILL NOT WORK ON WINDOWS SYSTEMS). Once you have that installed, open the Python file and edit the "HOSTNAMES" list to something like the following:
 
     HOSTNAMES = ["your.hostname:8888", "user@second-server.hostname"]
 

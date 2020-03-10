@@ -67,16 +67,16 @@ def send_cmd(cmd):
     Sends command to HOSTNAMES.
   """
   if not len(HOSTNAMES) > 0:
-    print(f"\033[0;37;41mFATAL ERROR: NO HOSTNAMES DEFINED\n")
+    print(f"\033[0;37;41mFATAL ERROR: NO HOSTNAMES DEFINED\033[0m\n")
     os.system("tput init")
   elif cmd:
     for a in HOSTNAMES:
-      print(f"\033[0;37;46m" + a)
+      print(f"\033[0;37;46m" + a + "\033[0m")
       os.system("tput init")
       os.system("ssh -q " + get_username(a) + "@" + get_hostname(a) + " -p" + get_port(a) + " " + cmd)
       print("")
   else:
-    print(f"\033[0;37;41mFATAL ERROR: NO COMMAND SPECIFIED\n")
+    print(f"\033[0;37;41mFATAL ERROR: NO COMMAND SPECIFIED\033[0m\n")
     os.system("tput init")
 
 send_cmd(" ".join(a for a in sys.argv[1:]))

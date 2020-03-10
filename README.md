@@ -7,6 +7,17 @@ This program has only been tested with Python 3.7+. Once you have that installed
 
     HOSTNAMES = ["your.hostname:8888", "user@second-server.hostname"]
 
+Once you've added your servers AND successfully enabled key authentication with those hostname(s), simply run the following to send a command:
+
+    python send_cmd.py uptime
+
+You should see:
+
+    HOSTNAME_1:
+     (response)
+
+    HOSTNAME_2:
+     (response)
 
 # WARNING
 

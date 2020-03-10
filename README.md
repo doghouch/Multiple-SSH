@@ -9,7 +9,7 @@ This program has only been tested with Python 3.7+. Once you have that installed
 
 Once you've added your servers AND successfully enabled key authentication with those hostname(s), simply run the following to send a command:
 
-    python send_cmd.py uptime
+    python send_cmd.py (command)
 
 You should see:
 
